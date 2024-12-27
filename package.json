@@ -1,0 +1,33 @@
+{
+  "name": "2025-template-rsc",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "@types/bun": "latest",
+    "@types/react": "^19.0.2",
+    "@types/react-dom": "^19.0.2",
+    "hohoro": "0.3.0",
+    "one-version": "0.2.0",
+    "typescript": "5.7.2"
+  },
+  "scripts": {
+    "one-version:check": "one-version check",
+    "build:tailwind": "tailwindcss -i ./src/app/styles.css -o ./dist/styles.css",
+    "build:source": "hohoro-experimental",
+    "build": "bun run build:source && bun run build:tailwind",
+    "dev:tailwind": "tailwindcss -i ./src/app/styles.css -o ./dist/styles.css --watch",
+    "dev:source": "node --watch-path=./src ./scripts/dev.mjs",
+    "dev": "bun run dev:source & bun run dev:tailwind"
+  },
+  "dependencies": {
+    "@hono/node-server": "1.13.7",
+    "@matthamlin/react-server-dom-esm": "0.0.0-experimental-fc8a898d-20241226",
+    "@tailwindcss/cli": "^4.0.0-beta.8",
+    "hono": "4.6.14",
+    "oxc-transform": "0.44.0",
+    "react": "0.0.0-experimental-fc8a898d-20241226",
+    "react-dom": "0.0.0-experimental-fc8a898d-20241226",
+    "tailwindcss": "^4.0.0-beta.8"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "$schema": "https://one-version.vercel.app/schema.json",
+  // one of: "bun", "yarn-berry", "yarn-classic", "pnpm", "npm"
+  // by default it will try to detect the package manager based on the presence of a lockfile
+  "packageManager": "bun",
+  //   // A mapping of dependencies, and which workspaces are "allowed" to use different versions
+  //   "overrides": {
+  //     "react": {
+  //       "18.0.0": ["pkg-a"],
+  //       // Wildcards are supported, and will capture any workspaces!
+  //       "17.0.0": ["*"]
+  //     }
+  //   },
+  // one of: "pin", "loose", defaults to "loose" if not provided
+  // pin: all dependencies and devDependencies must use an exact version
+  // meaning no ranges (`^`, `~`, `.x`, etc.) are allowed
+  "versionStrategy": "pin"
+}
