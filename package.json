@@ -15,7 +15,8 @@
   "scripts": {
     "one-version:check": "one-version check",
     "build:tailwind": "tailwindcss -i ./src/app/styles.css -o ./dist/styles.css",
-    "build:source": "hohoro-experimental",
+    "xbuild:source": "hohoro-experimental",
+    "build:source": "node ./scripts/build.mjs",
     "build": "bun run build:source && bun run build:tailwind",
     "dev:tailwind": "tailwindcss -i ./src/app/styles.css -o ./dist/styles.css --watch",
     "dev:source": "node --watch-path=./src ./scripts/dev.mjs",
