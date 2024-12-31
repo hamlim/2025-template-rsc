@@ -23,6 +23,6 @@
     "noUnusedLocals": false,
     "noUnusedParameters": false,
     "noPropertyAccessFromIndexSignature": false,
-    "types": ["react/experimental"]
+    "types": ["react/experimental", "node"]
   }
 }
